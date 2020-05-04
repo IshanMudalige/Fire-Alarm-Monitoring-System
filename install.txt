@@ -1,0 +1,40 @@
+
+======Running RestAPI======
+
+Step 1: Open RestAPI project in a IDE(IntelliJ) and start REST service using "mvn spring-boot:run" command. This project uses mongodb as database
+        so need to have mongodb installed in pc.
+
+=====Running RMI Server====
+
+Step 1: Open Server project and import following libraries(in JARS folder)
+	jackson-annotations-2.9.0
+	jackson-core-2.9.0
+	jackson-databind-2.9.5
+	okhttp-3.9.0
+	okio-1.13.0
+
+Step 2: Open new terminal inside out/production/server and run "start rmiregistry" command.
+
+Step 3: Run the Server project.
+
+===Running Desktop Client===
+
+Step 1: Open DesktopClient project import following libraries(in JARS folder)
+ 	jackson-annotations-2.9.0
+	jackson-core-2.9.0
+	jackson-databind-2.9.5
+	okhttp-3.9.0
+	okio-1.13.0
+	jersey-bundle-1.9
+	jersey-core-1.9
+	java-json
+	genson-1.6
+
+Step 2: Run DesktopClient project
+
+=====Running WebClient======
+
+Step 1: Open fire-alarm-web project install node modules using "npm install" command.
+
+Step 2: Run project with "npm start" command. 
+
