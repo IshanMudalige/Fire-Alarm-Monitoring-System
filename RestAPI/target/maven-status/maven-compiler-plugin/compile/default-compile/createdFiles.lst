@@ -1,0 +1,8 @@
+com\rest\api\RestAPI.class
+com\rest\api\model\User.class
+com\rest\api\controller\SensorController.class
+com\rest\api\model\Sensor.class
+com\rest\api\repository\SensorRepository.class
+com\rest\api\service\UserService.class
+com\rest\api\repository\UserRepository.class
+com\rest\api\service\SensorService.class
