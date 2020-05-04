@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
+   <children>
+      <TableView fx:id="table" layoutX="274.0" layoutY="97.0" prefHeight="249.0" prefWidth="399.0">
+        <columns>
+          <TableColumn fx:id="col_sid" prefWidth="58.0" text="SID" />
+          <TableColumn fx:id="col_floorNum" prefWidth="71.0" text="Floor Num" />
+            <TableColumn fx:id="col_roomNum" prefWidth="96.0" text="Room Num" />
+            <TableColumn fx:id="col_smokeLevel" prefWidth="88.0" text="Smoke Level" />
+            <TableColumn fx:id="col_co2Level" text="CO2 Level" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txSid" layoutX="100.0" layoutY="143.0" />
+      <TextField fx:id="txFloorNum" layoutX="100.0" layoutY="190.0" />
+      <TextField fx:id="txRoomNum" layoutX="100.0" layoutY="241.0" />
+      <Button fx:id="btnAdd" layoutX="100.0" layoutY="287.0" mnemonicParsing="false" onAction="#addSensor" prefHeight="25.0" prefWidth="77.0" text="Add Sensor" />
+      <Button layoutX="596.0" layoutY="365.0" mnemonicParsing="false" onAction="#removeSensor" prefHeight="25.0" prefWidth="77.0" text="Delete" />
+      <Button layoutX="180.0" layoutY="287.0" mnemonicParsing="false" onAction="#updateSensor" prefHeight="25.0" prefWidth="69.0" text="Update" />
+      <Pane prefHeight="65.0" prefWidth="700.0" style="-fx-background-color: #004771;">
+         <children>
+            <Text fill="WHITE" layoutX="238.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fire Alarm Monitor">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Label layoutX="34.0" layoutY="147.0" text="SID" />
+      <Label layoutX="33.0" layoutY="193.0" text="Floor Num" />
+      <Label layoutX="31.0" layoutY="243.0" text="Room Num" />
+      <Label layoutX="33.0" layoutY="100.0" text="Number of Active Sensors">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="txCount" layoutX="212.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
